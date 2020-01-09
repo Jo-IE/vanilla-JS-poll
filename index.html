@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./public/styles.css" rel="stylesheet" />
+    <script src="./scripts/index.js"></script>
+
+    <title>Ice Cream Poll</title>
+  </head>
+  <body>
+    <main id="main" class="container mt-5">
+      <header class="jumbotron py-3 w-75 mx-auto">
+        <h1>Ice Cream Poll</h1>
+      </header>
+      <form>
+        <legend class="text-center py-3 col-lg-6 mx-auto">
+          Rank the following ice cream flavors from most to least favorite and
+          select the flavor you've had most recently.
+          <br />
+          (Drag to order)
+        </legend>
+        <div
+          id="list"
+          class="card mx-auto col-lg-4 col-md-5 py-5 px-5 shadow-lg "
+        >
+          <label
+            draggable="true"
+            class="item mx-auto"
+            for="radio-vanilla"
+            id="opt1"
+          >
+            <input
+              type="radio"
+              name="flavor"
+              id="radio-vanilla"
+              value="vanilla"
+            />
+            Vanilla
+          </label>
+
+          <label
+            draggable="true"
+            class=" item mx-auto"
+            for="radio-scheesecake"
+            id="opt2"
+          >
+            <input
+              type="radio"
+              name="flavor"
+              id="radio-scheesecake"
+              value="strawberry-cheesecake"
+            />
+            Strawberry Cheesecake
+          </label>
+
+          <label
+            draggable="true"
+            class="item mx-auto"
+            for="radio-chunmonkey"
+            id="opt3"
+          >
+            <input
+              type="radio"
+              name="flavor"
+              id="radio-chunmonkey"
+              value="chunky-monkey"
+            />
+            Chunky Monkey
+          </label>
+
+          <label
+            draggable="true"
+            class="item mx-auto"
+            for="radio-urbanbourbon"
+            id="opt4"
+          >
+            <input
+              type="radio"
+              name="flavor"
+              id="radio-urbanbourbon"
+              value="urban-bourbon"
+            />
+            Urban Bourbon
+          </label>
+          <label
+            draggable="true"
+            class="item mx-auto"
+            for="radio-choc-fudge"
+            id="opt5"
+          >
+            <input
+              type="radio"
+              name="flavor"
+              id="radio-choc-fudge"
+              value="chocolate-fudge-brownie"
+            />
+            Chocolate Fudge Brownie
+          </label>
+        </div>
+        <button class="submit btn-lg my-5 px-3">View Results</button>
+      </form>
+      <p id="error" class="error"></p>
+      <p class="result"></p>
+    </main>
+
+    <footer class="pt-5 text-center">
+      <p>© coded by Jo</p>
+    </footer>
+  </body>
+
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"
+  ></script>
+</html>

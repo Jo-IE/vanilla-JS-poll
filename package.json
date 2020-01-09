@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-js-poll",
+  "version": "1.0.0",
+  "description": "A demo poll written in plain Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jo-IE/vanilla-JS-poll.git"
+  },
+  "author": "Jo IE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jo-IE/vanilla-JS-poll/issues"
+  },
+  "homepage": "https://github.com/Jo-IE/vanilla-JS-poll#readme"
+}

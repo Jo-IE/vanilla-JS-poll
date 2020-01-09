@@ -1,0 +1,76 @@
+body {
+  background-color: #5bc0eb;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 1.1rem;
+}
+
+.item {
+  border-radius: 5px;
+  width: 200px;
+  background-color: #054a91;
+  margin-bottom: 10px;
+  cursor: grab;
+  padding: 8px;
+  transition: all 1.5s;
+  font-weight: bold;
+}
+.btn-lg:hover {
+  color: #054a91;
+  background-color: white;
+  border: 1px solid #054a91;
+}
+.btn-lg,
+.jumbotron {
+  background-color: #054a91;
+  color: white;
+  font-weight: bold;
+}
+
+.drag {
+  background-color: #bfdbf7;
+}
+.move {
+  margin-top: 50px;
+  transition: all linear 0.1s;
+}
+.placeholder {
+  background-color: #d58936;
+  width: 200px;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.selected {
+  background-color: #3e7cb1;
+  border: 1px solid #054a91;
+}
+.error {
+  color: #d62839;
+}
+.result {
+  color: black;
+}
+@keyframes drop {
+  0% {
+    background-color: #3c91e6;
+  }
+
+  100% {
+    background-color: #054a91;
+  }
+}
+
+.drop {
+  animation-name: drop;
+  animation-duration: 1.8s;
+}
+footer {
+  font-size: 0.8rem;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  width: 100%;
+  height: 200px;
+}
