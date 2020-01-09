@@ -2,9 +2,9 @@ const dropZone = document.getElementById('list');
 const items = Array.from(document.querySelectorAll('.item'));
 const submit = document.querySelector('.submit');
 const result = document.querySelector('.result');
-let adjacentItem = '';
+let adjacentItem;
 let prevAdjacentItem;
-let selectedItem = '';
+let selectedItem;
 
 const handleDragStart = e => {
   e.dataTransfer.effectAllowed = 'move';
